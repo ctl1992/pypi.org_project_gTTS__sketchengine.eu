@@ -1,13 +1,10 @@
 # 使用gTTS合成单词表的配套mp3
-TODO 英文的mp3暂未生成
 
 WARNING 调用谷歌接口有频率限制，会被认为对谷歌进行ddos攻击，被封主机和ip
 
-# 词汇来源：https://app.sketchengine.eu/#corpus
+# 词汇来源：https://app.sketchengine.eu/#corpus?tab=advanced&cat=all&sketches=0&lang=&lang2=&query=&showOld=0
 
 登录后选择不同语言的语料库（corpus）
-
-https://app.sketchengine.eu/#corpus
 
 免费账户每次只能下载1000个单词，可以限制词频得到第1001-第2000的单词，
 
