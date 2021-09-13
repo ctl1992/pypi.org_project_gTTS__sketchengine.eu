@@ -1,6 +1,6 @@
 import pandas
 import os
-directory = "wordlist"
+directory = "0_wordlist"
 english_xlsx = pandas.DataFrame(columns=['Item'])
 
 
@@ -14,5 +14,5 @@ fileNamesSorted = sorted(fileNames, reverse=True, key=getLastIntOfFileName)
 for filename in fileNamesSorted:
     wordlist = pandas.read_excel(os.path.join(directory, filename), header=3)[:-1][['Item']]
     english_xlsx = english_xlsx.append(wordlist)
-english_xlsx.to_excel("english.xlsx", index=False, header=False)
+english_xlsx.to_excel("1_merge_wordlist.xlsx", index=False, header=False)
 pass
