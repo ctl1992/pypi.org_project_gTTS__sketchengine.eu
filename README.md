@@ -2,6 +2,8 @@
 
 WARNING 调用谷歌接口有频率限制，会被认为对谷歌进行ddos攻击，被封主机和ip
 
+WARNING 谷歌翻译表格时，遇到constructor的单元格无法翻译，可能是转义字符
+
 # 词汇来源：https://app.sketchengine.eu/#corpus?tab=advanced&cat=all&sketches=0&lang=&lang2=&query=&showOld=0
 
 登录后选择不同语言的语料库（corpus）
