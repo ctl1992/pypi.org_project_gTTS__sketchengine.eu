@@ -5,9 +5,9 @@ from num2words import num2words
 import pandas
 from gtts import gTTS
 import os
-chinese_english_xlsx = pandas.read_excel("3_chinese_english_deleteNoChinese.xlsx", header=None)
-xlsxIndex_start = 20001 # xlsx_index==dataFrameIndex+1
-xlsxIndex_end = 30000
+chinese_english_xlsx = pandas.read_excel("3_chinese_english_deleteNoChinese.xls", header=None)
+xlsxIndex_start = 12001 # xlsx_index==dataFrameIndex+1
+xlsxIndex_end = 20000
 f = None
 def index2ChineseChars(xlsxIndex):
     res = ""
@@ -43,7 +43,7 @@ for dataFrameIndex, row in chinese_english_xlsx.iterrows():
         if (dataFrameIndex % 1000) == 0:
             if f is not None:
                 f.close()
-            mp3Path = "4_mp3/indexChinese_chinese_english_" + str(xlsxIndex) + "_" + str(xlsxIndex + 999) + ".4_mp3"
+            mp3Path = "4_mp3/indexChinese_chinese_english_" + str(xlsxIndex) + "_" + str(xlsxIndex + 999) + ".mp3"
             if os.path.exists(mp3Path):
                 os.remove(mp3Path)
             f = open(mp3Path, 'wb')
