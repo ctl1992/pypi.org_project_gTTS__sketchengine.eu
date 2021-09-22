@@ -6,8 +6,8 @@ import pandas
 from gtts import gTTS
 import os
 chinese_english_xlsx = pandas.read_excel("3_chinese_english_deleteNoChinese.xls", header=None)
-xlsxIndex_start = 12001 # xlsx_index==dataFrameIndex+1
-xlsxIndex_end = 20000
+xlsxIndex_start = 44001 # xlsx_index==dataFrameIndex+1
+xlsxIndex_end = 47000
 f = None
 def index2ChineseChars(xlsxIndex):
     res = ""
